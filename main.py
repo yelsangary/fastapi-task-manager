@@ -3,6 +3,7 @@ from dataclasses import asdict
 from schemas import TaskCreate, TaskUpdate, TaskResponse
 from models import Task
 
+#https://medium.com/@hafsakamali362/fastapi-task-management-api-complete-guide-for-beginners-d48eb4c7c654 was used as a reference for main.py part
 app = FastAPI(title="Task Manager")
 
 tasks_db: dict[int, Task] = {}
